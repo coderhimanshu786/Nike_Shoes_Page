@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600&family=Teko&family=Ysabeau+SC:wght@800&display=swap");
+
+:root {
+  --red: #d01c28;
+  --grey: #2e2e2e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(151, 151, 151);
+
+}
+.logo img {
+  margin: 30px 0 0 0;
+  mix-blend-mode: darken;
+}
+button {
+  /* all reset components */
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: #ffff;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-left: 40px;
+
+}
+button:hover{
+  background-color: #b52a34;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  
+}
+nav ul li {
+  font-size: 16px;
+  font-weight: 400;
+  transition: font-weight 0.2s ease;
+  cursor: pointer;
+}
+nav ul li:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+}
+.hero h1{
+    font-weight: bolder;
+    font-size: 110px;
+    line-height: 102px;
+    margin-left: 40px;
+}
+.deserve{
+  letter-spacing: 15px;
+}
+.the-best{
+  letter-spacing: 10px;
+}
+.content{
+  margin: 12px 0;
+  letter-spacing: .5px;
+  margin-left: 40px;
+
+}
+.hero-image{
+    padding: 30px;
+}
+.hero-image img{
+    width: 700px;
+    height: 620px;
+    mix-blend-mode: darken;
+    box-shadow: #b52a34;
+  overflow: hidden;
+
+}
+.hero-btn{
+  margin: 10px auto;
+  width: 100%;
+}
+.shop-now{
+  border-radius: 5px;
+}
+.catogory{
+  margin-left: 15px;
+  border-radius: 5px;
+
+}
+.brand-icon{
+  width: 100%;
+}
+.icon-2{
+  margin-left: 10px;
+}
+.shopping{
+  margin-left: 40px;
+
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  nav{
+    width: 80%;
+  }
+  nav ul{
+    display: none;
+  }
+  .logo{
+    margin: 35px 0 0 -10px;
+  }
+  .login{
+    margin-top: 35px;
+    margin-right: 80px;
+  }
+ .hero-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+ }
+  .hero h1{
+    width: 60%;
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 258px auto 0 20px;
+}
+.deserve{
+  letter-spacing: 2px;
+}
+.content{
+  margin-left: 20px;
+  width: 60%;
+  margin-top: 50px;
+}
+.shop-now{
+  margin-left: 20px;
+}
+.shopping{
+  margin : 10px 0 0 20px;
+}
+.hero-image{
+  position: absolute;
+  left: -80px;
+}
+.shopping{
+  margin-top: 20px;
+}
+.hero-image img{
+  width: 600px;
+  height: 520px;
+}
+}
